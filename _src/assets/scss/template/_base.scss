@@ -1,3 +1,64 @@
+html {
+    font-size: 16px;
+}
+
 body {
-    background-color:red;
+    font-family: $font-text;
+    color: black;
+    a {
+        color:inherit;
+        padding: 3px;
+        display: inline-block;
+
+        &:hover {
+            color:red;
+        }
+    }
+}
+
+.wrapper {
+    padding: $main-padding;
+    min-height: 100vh;
+}
+
+.header {
+    border-bottom: 1px solid $cool-grey;
+
+    &__background {
+    background:url(../images/header.jpg);
+    width:150px;
+    height:75px;
+    background-size: cover;
+    background-position:center;
+    margin:auto;}
+    
+    &__title {
+        text-align:center;
+    }
+}
+.col-left {
+    display:flex;
+    
+    .aside__author,.aside__links {
+        flex-basis: 50%;
+    }
+
+    .mask {
+        border-radius: 100%;
+        width:150px;
+        height:150px;
+        overflow:hidden;
+
+        img {
+            border-style: none;
+            width: 123%;
+            transform: translateX(-25px);
+        }
+    }
+}
+
+.footer {
+    border-top: solid 1px $cool-grey;
+    padding-top: $main-padding;
+    padding-bottom: $main-padding;
 }
