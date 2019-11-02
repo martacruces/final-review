@@ -38,25 +38,25 @@ body {
 }
 .col-left {
     display:flex;
+}
     
-    .aside__author,.aside__links {
-        flex-basis: 50%;
+.aside__author,.aside__links {
+    flex-basis: 50%;
     }
 
-    .mask {
-        border-radius: 100%;
-        width:150px;
-        height:150px;
-        overflow:hidden;
+.mask {
+    border-radius: 100%;
+    width:150px;
+    height:150px;
+    overflow:hidden;
 
-        img {
-            border-style: none;
-            width: 123%;
-            transform: translateX(-25px);
+    img {
+        border-style: none;
+        width: 123%;
+        transform: translateX(-25px);
         }
     }
-}
-
+    
 .footer {
     border-top: solid 1px $cool-grey;
     padding-top: $main-padding;
@@ -72,7 +72,7 @@ body {
         grid-gap: 20px;
         border-left: 45px solid $cool-grey;
     }
-    
+
     .col-right {
         grid-column: span 3;
     }
